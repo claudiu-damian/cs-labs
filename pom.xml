@@ -104,6 +104,10 @@
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
+                    <parallel>methods</parallel>
+                    <threadCount>4</threadCount>
+                    <perCoreThreadCount>false</perCoreThreadCount>
+                    <rerunFailingTestsCount>1</rerunFailingTestsCount>
                 </configuration>
                 <dependencies>
                     <dependency>
